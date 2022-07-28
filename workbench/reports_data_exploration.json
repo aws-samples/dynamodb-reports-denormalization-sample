@@ -1,0 +1,642 @@
+{
+  "ModelName": "Reports",
+  "ModelMetadata": {
+    "Author": "Jonh Doe",
+    "DateCreated": "Jun 07, 2022, 09:01 PM",
+    "DateLastModified": "Jun 08, 2022, 05:05 PM",
+    "Description": "",
+    "AWSService": "Amazon DynamoDB",
+    "Version": "3.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "report_data_exploration",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "report_id",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "status",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "created_date",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "city",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "country",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "report_data",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "user_id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "requested_by",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "organization",
+          "AttributeType": "S"
+        }
+      ],
+      "TableData": [
+        {
+          "report_id": {
+            "S": "1c990a94-6507-426b-9b5c-63ef5238cca2"
+          },
+          "status": {
+            "S": "ASSIGNED"
+          },
+          "created_date": {
+            "S": "2022-06-01T15:27:40Z"
+          },
+          "city": {
+            "S": "Basicao Coastal"
+          },
+          "country": {
+            "S": "Philippines"
+          },
+          "report_data": {
+            "S": "aGFiaXRhc3NlIHBsYXRlYSBkaWN0dW1zdCBldGlhbSBmYXVjaWJ1cyBjdXJzdXMgdXJuYQ=="
+          },
+          "user_id": {
+            "S": "gmerioth3"
+          },
+          "requested_by": {
+            "S": "omackey0"
+          },
+          "organization": {
+            "S": "zeta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "5232edfd-5bec-46b6-ada3-e8255a102f07"
+          },
+          "status": {
+            "S": "INPROGRESS"
+          },
+          "created_date": {
+            "S": "2022-05-27T02:53:30Z"
+          },
+          "city": {
+            "S": "Jenang Selatan"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "c29kYWxlcyBzZWQgdGluY2lkdW50IGV1IGZlbGlzIGZ1c2Nl"
+          },
+          "user_id": {
+            "S": "dkemitt6"
+          },
+          "requested_by": {
+            "S": "mgomer1"
+          },
+          "organization": {
+            "S": "epsilon"
+          }
+        },
+        {
+          "report_id": {
+            "S": "53cd076a-034a-419f-b826-2733aab97930"
+          },
+          "status": {
+            "S": "COMPLETED"
+          },
+          "created_date": {
+            "S": "2022-05-31T14:44:01Z"
+          },
+          "city": {
+            "S": "Muaratiga"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "Y29uZ3VlIGV0aWFtIGp1c3RvIGV0aWFtIHByZXRpdW0="
+          },
+          "user_id": {
+            "S": "npedder0"
+          },
+          "requested_by": {
+            "S": "sstit2"
+          },
+          "organization": {
+            "S": "beta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "cd521f0b-f908-4fb1-a110-01e7ec721aba"
+          },
+          "status": {
+            "S": "ASSIGNED"
+          },
+          "created_date": {
+            "S": "2022-05-02T22:08:21Z"
+          },
+          "city": {
+            "S": "Kedawung"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "bWF1cmlzIG1vcmJpIG5vbiBsZWN0dXMgYWxpcXVhbSBzaXQgYW1ldA=="
+          },
+          "user_id": {
+            "S": "gboddington4"
+          },
+          "requested_by": {
+            "S": "cstarmore3"
+          },
+          "organization": {
+            "S": "delta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "622150fb-7dc7-495f-b671-c93b8d5af64a"
+          },
+          "status": {
+            "S": "ASSIGNED"
+          },
+          "created_date": {
+            "S": "2022-05-10T04:10:06Z"
+          },
+          "city": {
+            "S": "Lirung"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "aXBzdW0gcHJpbWlzIGluIGZhdWNpYnVzIG9yY2kgbHVjdHVzIGV0IHVsdHJpY2Vz"
+          },
+          "user_id": {
+            "S": "dkemitt6"
+          },
+          "requested_by": {
+            "S": "hgiorio4"
+          },
+          "organization": {
+            "S": "gamma"
+          }
+        },
+        {
+          "report_id": {
+            "S": "2c27ee55-3d5b-4aa3-bf14-7859e856f2f1"
+          },
+          "status": {
+            "S": "COMPLETED"
+          },
+          "created_date": {
+            "S": "2022-06-02T17:47:45Z"
+          },
+          "city": {
+            "S": "Selaparang Timur"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "YWMgbG9ib3J0aXMgdmVsIGRhcGlidXMgYXQ="
+          },
+          "user_id": {
+            "S": "pbaldoni6"
+          },
+          "requested_by": {
+            "S": "bgorke5"
+          },
+          "organization": {
+            "S": "zeta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "e2ab8ec6-4bd7-4e8b-b548-0cc12dfd61b0"
+          },
+          "status": {
+            "S": "ASSIGNED"
+          },
+          "created_date": {
+            "S": "2022-05-02T10:00:53Z"
+          },
+          "city": {
+            "S": "Surat Thani"
+          },
+          "country": {
+            "S": "Thailand"
+          },
+          "report_data": {
+            "S": "dXQgZG9sb3IgbW9yYmkgdmVsIGxlY3R1cw=="
+          },
+          "user_id": {
+            "S": "aderdes8"
+          },
+          "requested_by": {
+            "S": "gfrancecione6"
+          },
+          "organization": {
+            "S": "delta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "5552aa95-04ee-4029-9cce-79c4587110e6"
+          },
+          "status": {
+            "S": "INPROGRESS"
+          },
+          "created_date": {
+            "S": "2022-05-30T05:57:20Z"
+          },
+          "city": {
+            "S": "Jabungsisir"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "b3JjaSBsdWN0dXMgZXQgdWx0cmljZXMgcG9zdWVyZSBjdWJpbGlh"
+          },
+          "user_id": {
+            "S": "sughelli7"
+          },
+          "requested_by": {
+            "S": "rmaker7"
+          },
+          "organization": {
+            "S": "epsilon"
+          }
+        },
+        {
+          "report_id": {
+            "S": "38f026f2-1cd7-48f5-8738-ceeb815e2fb7"
+          },
+          "status": {
+            "S": "INPROGRESS"
+          },
+          "created_date": {
+            "S": "2022-05-07T15:34:31Z"
+          },
+          "city": {
+            "S": "Madan"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "YWxpcXVldCBwdWx2aW5hciBzZWQgbmlzbCBudW5j"
+          },
+          "user_id": {
+            "S": "gmerioth3"
+          },
+          "requested_by": {
+            "S": "whallut8"
+          },
+          "organization": {
+            "S": "epsilon"
+          }
+        },
+        {
+          "report_id": {
+            "S": "aef5dc51-ec4b-4349-a2b9-d468bf26a8c5"
+          },
+          "status": {
+            "S": "CREATED"
+          },
+          "created_date": {
+            "S": "2022-05-23T17:13:59Z"
+          },
+          "city": {
+            "S": "Pameungpeuk"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "c2VtcGVyIHBvcnRhIHZvbHV0cGF0IHF1YW0gcGVkZSBsb2JvcnRpcw=="
+          },
+          "user_id": {
+            "S": "cwestover4"
+          },
+          "requested_by": {
+            "S": "lterrans9"
+          },
+          "organization": {
+            "S": "zeta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "6d3ef87b-85cc-43f6-a668-efb2892b7ea1"
+          },
+          "status": {
+            "S": "ASSIGNED"
+          },
+          "created_date": {
+            "S": "2022-05-06T11:14:42Z"
+          },
+          "city": {
+            "S": "Pasargunung"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "bWFnbmlzIGRpcyBwYXJ0dXJpZW50IG1vbnRlcyBuYXNjZXR1ciByaWRpY3VsdXMgbXVzIHZpdmFtdXM="
+          },
+          "user_id": {
+            "S": "ftamsett5"
+          },
+          "requested_by": {
+            "S": "abartuseka"
+          },
+          "organization": {
+            "S": "beta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "20668b27-f7e7-434b-891b-b5c19d1d25c7"
+          },
+          "status": {
+            "S": "CREATED"
+          },
+          "created_date": {
+            "S": "2022-05-13T15:09:15Z"
+          },
+          "city": {
+            "S": "Yeosu"
+          },
+          "country": {
+            "S": "South Korea"
+          },
+          "report_data": {
+            "S": "c2FwaWVuIHF1aXMgbGliZXJvIG51bGxhbSBzaXQgYW1ldA=="
+          },
+          "user_id": {
+            "S": "aderdes8"
+          },
+          "requested_by": {
+            "S": "ngreaterexb"
+          },
+          "organization": {
+            "S": "epsilon"
+          }
+        },
+        {
+          "report_id": {
+            "S": "d269b092-641c-4792-9e58-ce1d87785e81"
+          },
+          "status": {
+            "S": "ASSIGNED"
+          },
+          "created_date": {
+            "S": "2022-05-04T10:50:03Z"
+          },
+          "city": {
+            "S": "Kadoma"
+          },
+          "country": {
+            "S": "Japan"
+          },
+          "report_data": {
+            "S": "ZXN0IHF1YW0gcGhhcmV0cmEgbWFnbmEgYWMgY29uc2VxdWF0IG1ldHVz"
+          },
+          "user_id": {
+            "S": "gmerioth3"
+          },
+          "requested_by": {
+            "S": "jbustardc"
+          },
+          "organization": {
+            "S": "alfa"
+          }
+        },
+        {
+          "report_id": {
+            "S": "0c14d32c-d5f9-4119-a948-290ba1ef40a4"
+          },
+          "status": {
+            "S": "ASSIGNED"
+          },
+          "created_date": {
+            "S": "2022-05-29T07:44:01Z"
+          },
+          "city": {
+            "S": "Cipunglu"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "ZWxpdCBwcm9pbiByaXN1cyBwcmFlc2VudCBsZWN0dXMgdmVzdGlidWx1bSBxdWFt"
+          },
+          "user_id": {
+            "S": "pbaldoni6"
+          },
+          "requested_by": {
+            "S": "wandrusyakd"
+          },
+          "organization": {
+            "S": "epsilon"
+          }
+        },
+        {
+          "report_id": {
+            "S": "67036f2a-e63c-4536-b179-45a3fc035f99"
+          },
+          "status": {
+            "S": "CREATED"
+          },
+          "created_date": {
+            "S": "2022-06-05T13:08:00Z"
+          },
+          "city": {
+            "S": "Sumurwaru"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "YWxpcXVhbSBlcmF0IHZvbHV0cGF0IGluIGNvbmd1ZSBldGlhbSBqdXN0byBldGlhbQ=="
+          },
+          "user_id": {
+            "S": "aderdes8"
+          },
+          "requested_by": {
+            "S": "pblincoe"
+          },
+          "organization": {
+            "S": "epsilon"
+          }
+        },
+        {
+          "report_id": {
+            "S": "031ef99d-a1a7-45d7-96f9-f32b41f2a032"
+          },
+          "status": {
+            "S": "CREATED"
+          },
+          "created_date": {
+            "S": "2022-05-07T16:28:50Z"
+          },
+          "city": {
+            "S": "Kadengan"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "aW4gaGFjIGhhYml0YXNzZSBwbGF0ZWEgZGljdHVtc3Q="
+          },
+          "user_id": {
+            "S": "dduckhouse7"
+          },
+          "requested_by": {
+            "S": "mcasonf"
+          },
+          "organization": {
+            "S": "alfa"
+          }
+        },
+        {
+          "report_id": {
+            "S": "d811ea48-61b6-4572-809c-cef79e5b0c03"
+          },
+          "status": {
+            "S": "COMPLETED"
+          },
+          "created_date": {
+            "S": "2022-05-31T19:02:13Z"
+          },
+          "city": {
+            "S": "Mislak"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "Y3VyYWUgZHVpcyBmYXVjaWJ1cyBhY2N1bXNhbiBvZGlv"
+          },
+          "user_id": {
+            "S": "dduckhouse7"
+          },
+          "requested_by": {
+            "S": "tbwyeg"
+          },
+          "organization": {
+            "S": "epsilon"
+          }
+        },
+        {
+          "report_id": {
+            "S": "dccd4eb5-ee2f-4d2d-8814-3ad981f98a45"
+          },
+          "status": {
+            "S": "COMPLETED"
+          },
+          "created_date": {
+            "S": "2022-05-08T08:54:04Z"
+          },
+          "city": {
+            "S": "Banjeru"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "ZGFwaWJ1cyBhdCBkaWFtIG5hbSB0cmlzdGlxdWUgdG9ydG9yIGV1IHBlZGU="
+          },
+          "user_id": {
+            "S": "sughelli7"
+          },
+          "requested_by": {
+            "S": "spyecrofth"
+          },
+          "organization": {
+            "S": "delta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "8a0813fd-0cf1-4268-a31b-4d761335adf2"
+          },
+          "status": {
+            "S": "INPROGRESS"
+          },
+          "created_date": {
+            "S": "2022-05-18T22:48:59Z"
+          },
+          "city": {
+            "S": "Pan-an"
+          },
+          "country": {
+            "S": "Philippines"
+          },
+          "report_data": {
+            "S": "YW1ldCB0dXJwaXMgZWxlbWVudHVtIGxpZ3VsYSB2ZWhpY3VsYQ=="
+          },
+          "user_id": {
+            "S": "sughelli7"
+          },
+          "requested_by": {
+            "S": "rdemeri"
+          },
+          "organization": {
+            "S": "beta"
+          }
+        },
+        {
+          "report_id": {
+            "S": "b8e6d194-3d67-42d6-830a-8ac85d2dbd3e"
+          },
+          "status": {
+            "S": "CREATED"
+          },
+          "created_date": {
+            "S": "2022-05-17T17:39:31Z"
+          },
+          "city": {
+            "S": "Putat Lor"
+          },
+          "country": {
+            "S": "Indonesia"
+          },
+          "report_data": {
+            "S": "c2VkIHZlbCBlbmltIHNpdCBhbWV0IG51bmMgdml2ZXJyYSBkYXBpYnVz"
+          },
+          "user_id": {
+            "S": "aderdes8"
+          },
+          "requested_by": {
+            "S": "vgladdinj"
+          },
+          "organization": {
+            "S": "beta"
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      },
+      "BillingMode": "PAY_PER_REQUEST"
+    }
+  ]
+}
