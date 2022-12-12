@@ -23,7 +23,8 @@ for a given organization with some random status. After each query the RCU consu
 
 This file calls the global_table created in the example which is the denormalized data model.
 """
-from random import SystemRandom
+# from random import SystemRandom
+import random
 from time import sleep
 
 from operations import get_reports_by_org, get_reports_by_user_id
@@ -56,14 +57,14 @@ if __name__ == "__main__":
     counter = 0
     while counter <= 60:
         get_reports_by_user_id(
-            "UID#" + SystemRandom.choice(user_list),
-            SystemRandom.choice(status_list) + "#" + DATE,
+            "UID#" + random.choice(user_list),
+            random.choice(status_list) + "#" + DATE,
             "reports_global",
         )
         if counter % 10 == 0:
             get_reports_by_org(
-                "ORG#" + SystemRandom.choice(org_list),
-                SystemRandom.choice(status_list) + "#" + DATE,
+                "ORG#" + random.choice(org_list),
+                random.choice(status_list) + "#" + DATE,
                 "reports_global",
             )
         sleep(1)

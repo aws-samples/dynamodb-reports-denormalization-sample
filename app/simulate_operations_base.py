@@ -23,7 +23,8 @@ for a given organization with some random status. After each query the RCU consu
 
 This file calls the base table created in the example which is the original data model.
 """
-from random import SystemRandom
+# from random import SystemRandom
+import random
 from time import sleep
 
 from operations import get_base_reports_by_org, get_base_reports_by_user_id
@@ -54,8 +55,8 @@ status_list = ["ASSIGNED", "INPROGRESS", "CREATED"]
 if __name__ == "__main__":
     counter = 0
     while counter <= 60:
-        get_base_reports_by_user_id(SystemRandom.choice(user_list), DATE)
+        get_base_reports_by_user_id(random.choice(user_list), DATE)
         if counter % 10 == 0:
-            get_base_reports_by_org(SystemRandom.choice(org_list), DATE)
+            get_base_reports_by_org(random.choice(org_list), DATE)
         sleep(1)
         counter += 1
