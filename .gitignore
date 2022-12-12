@@ -164,3 +164,4 @@ app/legacy
 
 #bandit
 *.out
+.DS_Store
